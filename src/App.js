@@ -4,33 +4,11 @@ import Row from './components/Row';
 import Colum from './components/Colum';
 import classNames from 'classnames/bind';
 import styles from './App.module.scss';
+import Container from './components/Container';
 
 const cx = classNames.bind(styles);
 function App() {
-    return (
-        <Grid grid>
-            <Row noGutter>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-                <Colum noGutter size={['l-4', 'm-6', 's-8']}>
-                    <div style={{ backgroundColor: 'red' }}>colum 1</div>
-                </Colum>
-            </Row>
-        </Grid>
-    );
+    return <div>hello app react</div>;
 }
 
 export default App;
