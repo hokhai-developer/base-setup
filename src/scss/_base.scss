@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 //variables
-//media
-$mobile-width: 600px; //iphone 12pro
-$tablet-width: 913px; //surface-pro 7
+
 //font
 $font-family: 'Nunito', sans-serif;
 $text-color-normal: #676a79;
@@ -43,27 +41,57 @@ $color-light: #eef0f2;
 $white-color: #fff;
 $black-color: #000;
 $background-body-color: #676a79;
+
 //width && hight
-$max-width: 1132px;
-$padding-30: 30px;
-$padding-16: 16px;
-$padding-8: 6px;
-$header-hight: 60px; //linear-gradient(180deg, #ffffff26, #fff0);
+$max-width-1334: 1334px; //max-container
+$max-width-1320: 1320px; //2,3,4,5,6,8,10,12,24
+$max-width-1200: 1200px;
+$max-width-1080: 1080px;
+$max-width-960: 960px;
+$max-width-840: 840px;
+$max-width-720: 720px;
+$max-width-600: 600px;
+
+//grid
+$margin-grid: 12px; //khoang canh nho nhat giua grid voi body
+$padding-colum-12: 12px;
+$padding-colum-8: 8px;
+$padding-colum-4: 4px;
+
+$padding-24: 24px;
+$padding-12: 12px;
+$padding-6: 6px;
+$header-hight: 60px;
 //gap
 $gap-10: 10px;
+$gap-24: 24px;
+
+//Screen
+$screen-599: 599px;
+$screen-600: 600px;
+$screen-739: 739px;
+$screen-740: 740px;
+$screen-1023: 1023px;
+$screen-1024: 1024px;
+$screen-1239: 1239px;
+$tablet-width: 1023px; //tablet
+$mobile-width: 740px; //mobile
+
 //mix-xin
 @mixin maxWidth($max-screen-width) {
     @media only screen and (max-width: $max-screen-width) {
         @content;
     }
 }
-@mixin mobile {
-    @media only screen and (max-width: $mobile-width) {
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
         @content;
     }
 }
-@mixin tablet {
-    @media only screen and (max-width: $tablet-width) {
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
         @content;
     }
 }
